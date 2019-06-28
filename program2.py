@@ -1,8 +1,8 @@
-num = int(input(" "))
-if num % 2  == 0:
-   print("Even")
-elif num % 2  == 1:
-     print("Odd")
-else:
-   print("invalid")
+n=int(input(""))
+if n%2==0 and n>0:
+  print("Even")
+elif n%2==1 and n>0:
+  print("Odd")
+elif n<=0:
+  print("invalid")
    
