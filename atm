@@ -1,0 +1,84 @@
+print('Welcome to Aj Atm')
+balance=6000
+creditbalance=20000
+currentbalance=2000
+pin = int(input('Please Enter You 4 Digit Pin: '))
+if pin == (1234):
+  print('You entered your pin Correctly\n')
+  print('enter the option 1 for savings account')
+  print('enter the option 2 for credit account')
+  print('enter the option 3 for current account')
+  option=int(input(" "))  
+  if option == (1):
+    print("enter the option 1 for balance")
+    print("enter the option 2 for withdraw")
+    print("enter the option 3 for deposit")
+    option=int(input("enter the option:"))  
+    if option == (1):
+     print(balance )
+     print("transaction completed,THANK YOU")
+    elif option == (2):
+        amount=int(input("enter the amount:")) 
+        a=(balance-amount)
+        if a<=balance:
+           print("invalid amount")
+        else:
+          print(a)   
+          print("transaction completed,THANK YOU")
+    elif option == (3):
+     amount=int(input("enter the amount:"))
+     print("cashdeposited")
+     b=(balance+amount)
+     print("current balance:",b)
+     print("transaction completed,THANK YOU")
+  if option == (2):
+    print("enter the option 1 for balance")
+    print("enter the option 2 for withdraw")
+    print("enter the option 3 for deposit")
+    option=int(input("enter the option:"))  
+    if option == (1):
+       print(creditbalance )
+       print("transaction completed,THANK YOU")
+    elif option == (2):
+     amount=int(input("enter the amount:")) 
+     print("cashwithdrawed")
+     a=(balance-amount)
+     print("current balance:",a)
+     print("transaction completed,THANK YOU")
+  elif option == (3):
+     amount=int(input("enter the amount:"))
+     print("cashdeposited")
+     b=(balance+amount)
+     print("current balance:",b)
+     print("transaction completed,THANK YOU")
+      
+  if option == (3):
+    print("enter the option 1 for balance")
+    print("enter the option 2 for withdraw")
+    print("enter the option 3 for deposit")
+    option=int(input("enter the option:"))  
+    if option == (1):
+      print(currentbalance )
+      print("transaction completed,THANK YOU")
+    elif option == (2):
+      amount=int(input("enter the amount:")) 
+      print("cashwithdrawed")
+      a=(balance-amount)
+      print("current balance:",a)
+      print("transaction completed,THANK YOU")
+    elif option == (3):
+        amount=int(input("enter the amount:"))
+        print("cashdeposited")
+        b=(balance+amount)
+        print("current balance:",b)
+        print("transaction completed,THANK YOU") 
+    else:
+        print("Invalid option")      
+  else:
+        print("Invalid option")   
+else:
+  print('Incorrect pin,enter the correct pin')
+  
+   
+
+   
