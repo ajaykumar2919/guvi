@@ -1,3 +1,3 @@
-min=int(input(""))
-hr=min
-print(hr//60,min%60)
+minutes=int(input(""))
+hours=minutes
+print(hours//60,minutes%60)
