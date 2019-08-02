@@ -1,4 +1,3 @@
-print("enter the hour:")
-min=int(input(""))
-hr=min
-print(hr//60,min%60)
+mins=int(input(""))
+hr=mins
+print(hr//60,mins%60)
