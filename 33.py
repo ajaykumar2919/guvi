@@ -1,2 +1,2 @@
-ip=input()
-print((ip.count(" ")))
+aj=input()
+print((aj.count(" ")))
