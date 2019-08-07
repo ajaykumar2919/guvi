@@ -1,2 +1,2 @@
-sivan=input()
-print(sivan[::-1])
+av=input()
+print(av[::-1])
